@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assetss/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="./assetss/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <!-- CSS Files -->
+    <link
+      href="./assetss/css/material-dashboard.css?v=2.1.0"
+      rel="stylesheet"
+    />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assetss/demo/demo.css" rel="stylesheet" />
+    <link href="./assetss/css/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/gijgo.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/animated-headline.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/flag-icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/gijgo.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/animated-headline.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/flag-icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="sogo/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="sogo/css/animate.css" />
+    <link rel="stylesheet" href="sogo/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="sogo/sogo/css/aos.css" />
+    <link rel="stylesheet" href="sogo/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="sogo/css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="sogo/css/fancybox.min.css" />
+
+    <link rel="stylesheet" href="sogo/fonts/ionicons/css/ionicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="sogo/fonts/fontawesome/css/font-awesome.min.css"
+    />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="sogo/css/style.css" />
+
+    <!-- Login css -->
+    <link rel="stylesheet" href="login/fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="login/css/owl.carousel.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="login/css/bootstrap.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="login/css/style.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta charset="utf-8" />
+    <title>Farm website</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <meta
+      name="twitter:card"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <link rel="canonical" href="index.html" />
+    <meta name="next-head-count" content="7" />
+    <link
+      rel="preload"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="farm//_next/static/css/f4baf235c28810ee5204.css"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/781822e7e0179731817e947d56805a5faa1a279f.7647b6f1d13b2e5700da.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/appointment-83ac2eb06822a465c68c.js"
+      as="script"
+    />
+
+    <!-- contact -->
+    <link
+      rel="preload"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/781822e7e0179731817e947d56805a5faa1a279f.7647b6f1d13b2e5700da.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/appointment-83ac2eb06822a465c68c.js"
+      as="script"
+    />
+
+    <!-- end contact -->
+    <!-- Testimonials -->
+    <link
+      rel="preload"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/testimonials-2c5c94e1ccb2cc59a613.js"
+      as="script"
+    />
+
+    <!--  end Testimonials -->
+    <!-- Team -->
+    <link
+      rel="preload"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+      as="style"
+    />
+    <link rel="stylesheet" href="_next/static/css/f4baf235c28810ee5204.css" />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/team-085b131d11dca172c78d.js"
+      as="script"
+    />
+    <!-- End Team -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta charset="utf-8" />
+    <title>
+      Ston - React Disinfection &amp; Sanitization Services Template
+    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <meta
+      name="twitter:card"
+      content="Ston - React Disinfection &amp; Sanitization Services Template"
+    />
+    <link rel="canonical" href="index.html" />
+    <meta name="next-head-count" content="7" />
+    <link
+      rel="preload"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="farm/_next/static/css/f4baf235c28810ee5204.css"
+    />
+    <link
+      rel="preload"
+      href="_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/781822e7e0179731817e947d56805a5faa1a279f.7647b6f1d13b2e5700da.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/9455103532f629d0ffe35e811081a4d5ada80893.a672b83dfd4427705b54.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/abf4ca28ee7b54cbaf7231821719ba8c7d4e5d01.c48ad3970aecc8099607.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="farm/_next/static/chunks/pages/index-9a8cf7078a4bb03fe56b.js"
+      as="script"
+    />
+    <script src="https://www.paypal.com/sdk/js?client-id=ARYPUpFmCyQa7CN0DJVThaytcgH5hu0fm3ApjpPeYLDZiJkBKuT4VNYdjToWOfoGGzUOLOEl-Iwf6w_W&currency=CAD"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/1.0.0/css/font-awesome.css"
+      integrity="sha512-YX9NLok9RLg+o5JkA2Whp1kPDCBCEUolTyYykJVOe1xcaTNebXU/x02TxV0LpVYqVNJV5NVjyoMW0jHnJWICKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Farm</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- JS here -->
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.countTo.min.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script src="js/quantity-input.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.countTo.min.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="sogo/js/jquery-3.3.1.min.js"></script>
+    <script src="sogo/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="sogo/js/popper.min.js"></script>
+    <script src="sogo/js/bootstrap.min.js"></script>
+    <script src="sogo/js/owl.carousel.min.js"></script>
+    <script src="sogo/js/jquery.stellar.min.js"></script>
+    <script src="sogo/js/jquery.fancybox.min.js"></script>
+
+    <script src="sogo/js/aos.js"></script>
+
+    <script src="sogo/js/bootstrap-datepicker.js"></script>
+    <script src="sogo/js/jquery.timepicker.min.js"></script>
+
+    <script src="sogo/js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- login js -->
+
+    <script src="login/js/jquery-3.3.1.min.js"></script>
+    <script src="login/js/popper.min.js"></script>
+    <script src="login/js/bootstrap.min.js"></script>
+    <script src="login/js/main.js"></script>
+
+    <script
+      data-cfasync="false"
+      src="farm/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+
+    <script
+      nomodule=""
+      src="farm/_next/static/chunks/polyfills-b4ad15c9c82024d041e6.js"
+    ></script>
+    <script
+      src="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/781822e7e0179731817e947d56805a5faa1a279f.7647b6f1d13b2e5700da.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/appointment-83ac2eb06822a465c68c.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_ssgManifest.js"
+      async=""
+    ></script>
+    <script
+      data-cfasync="false"
+      src="farm/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/",
+        "query": {},
+        "buildId": "kdWHX0bOghJh2GHwSyWTo",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="farm/_next/static/chunks/polyfills-b4ad15c9c82024d041e6.js"
+    ></script>
+    <script
+      src="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      async=""
+    ></script>
+    <script
+      src="_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/781822e7e0179731817e947d56805a5faa1a279f.7647b6f1d13b2e5700da.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/9455103532f629d0ffe35e811081a4d5ada80893.a672b83dfd4427705b54.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/abf4ca28ee7b54cbaf7231821719ba8c7d4e5d01.c48ad3970aecc8099607.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/index-9a8cf7078a4bb03fe56b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_ssgManifest.js"
+      async=""
+    ></script>
+
+    <script
+      data-cfasync="false"
+      src="farm/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/contact",
+        "query": {},
+        "buildId": "kdWHX0bOghJh2GHwSyWTo",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="farm/_next/static/chunks/polyfills-b4ad15c9c82024d041e6.js"
+    ></script>
+    <script
+      src="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/contact-8166a4591df7c1f42ad8.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_ssgManifest.js"
+      async=""
+    ></script>
+    <!-- Testimonials -->
+    <script
+      data-cfasync="false"
+      src="farm/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/testimonials",
+        "query": {},
+        "buildId": "kdWHX0bOghJh2GHwSyWTo",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="farm/_next/static/chunks/polyfills-b4ad15c9c82024d041e6.js"
+    ></script>
+    <script
+      src="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/testimonials-2c5c94e1ccb2cc59a613.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="_next/static/kdWHX0bOghJh2GHwSyWTo/_ssgManifest.js"
+      async=""
+    ></script>
+    <!-- end testimonials -->
+    <!-- Team -->
+    <script
+      data-cfasync="false"
+      src="farm/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/team",
+        "query": {},
+        "buildId": "kdWHX0bOghJh2GHwSyWTo",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false
+      }
+    </script>
+    <script
+      nomodule=""
+      src="farm/_next/static/chunks/polyfills-b4ad15c9c82024d041e6.js"
+    ></script>
+    <script
+      src="farm/_next/static/chunks/main-391fb08a2a28f15d77c2.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/webpack-9a031c5a5ba261c557c6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/framework.1ae6aab54c557c2f6555.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ceed8f9fb2eafe1b5ecf00064f598df03765af0e.e68a13ffc3e01fed6aa6.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/00c969a4184709a22e39d4fcc0a4090cdc141bb5.6b75cbe5ab8e1e3d1b3b.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/68fbdcd950265ffa17253f91878a7d5c60967de5.eb268d69551bc6ee7e4a.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/_app-0bfa3d2a32b75b7bfb1f.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/ecf3aedbcd96348c0dab17dd7eeaa4971b9cbdd0.77f5a603be36fe8d6baf.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/chunks/pages/team-085b131d11dca172c78d.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_buildManifest.js"
+      async=""
+    ></script>
+    <script
+      src="farm/_next/static/kdWHX0bOghJh2GHwSyWTo/_ssgManifest.js"
+      async=""
+    ></script>
+    <script src="./assetss/js/core/jquery.min.js"></script>
+    <script src="./assetss/js/core/popper.min.js"></script>
+    <script src="./assetss/js/core/bootstrap-material-design.min.js"></script>
+    <script src="https://unpkg.com/default-passive-events"></script>
+    <script src="./assetss/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chartist JS -->
+    <script src="./assetss/js/plugins/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="./assetss/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assetss/js/material-dashboard.js?v=2.1.0"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="./assetss/demo/demo.js"></script>
+  </body>
+</html>
